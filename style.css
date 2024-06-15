@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    background-color: white;
+    height: auto;
+    zoom: 0.6;
+}
+
+#container {
+    background-color: #BD42B9;
+    background-image: linear-gradient(to right bottom, #BD42B9, white);
+    height: 900px;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid #7A2A77 1px;
+    position: sticky;
+    top: 0;
+    background-color: #BD42B9;
+    z-index: 1000;
+}
+
+#header ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+#header li {
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Hind Vadodara', sans-serif;
+    color: white;
+    padding-right: 20px;
+}
+
+#header a {
+    text-decoration: none;
+    color: #7A2A77;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#header a:hover,
+#header a.active {
+    color: white;
+    background-color: #7A2A77;
+    border-radius: 5px;
+}
+
+#home {
+    height: 1100px;
+    background-color: white;
+}
+
+#slika {
+    height: 760px;
+    width: 1000px;
+    background-color: #e7bce6;
+    margin-right: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("sliki/watercolor_flower.png");
+   background-position: -40px 0px;
+    background-size: 380px;
+    background-repeat: no-repeat;
+
+}
+#flower>img{
+    height: 300px;
+    position: absolute;
+
+}
+
+
+#tekst {
+    height: 760px;
+    width: 750px;
+    background-color: white;
+    box-shadow: 0px 20px 50px gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tekst img{
+    height: 760px;
+}
+
+
+#slika p:nth-child(1) {
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 150px;
+    color: #7A2A77;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#slika p:nth-child(2) {
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 90px;
+    text-shadow: 2px 2px 2px #7A2A77 ;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -655px;
+}
+
+#aboutme {
+    width: auto;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#aboutme img{
+    height: 1500px;
+}
+
+#tekst2 {
+    height: 760px;
+    width: 1830px;
+    background-color: #f9eef9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tekst2 p:nth-child(1) {
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 120px;
+    color: #7A2A77;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+#tekst2 p:nth-child(2) {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 50px;
+    width: 1500px;
+    color: #7A2A77;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#music {
+    width: auto;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9eef9;
+}
+
+#books {
+    margin: auto;
+    margin-top: 200px;
+    width: 1830px;
+    height: 1600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 150px;
+    flex-direction: column;
+    background-color: #f9eef9;
+    border: solid #7A2A77 1px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(121, 42, 118, 0.8), 0 0 20px rgba(121, 42, 118, 0.6), 0 0 30px rgba(121, 42, 118, 0.4), 0 0 40px rgba(121, 42, 118, 0.2);
+}
+
+#books .book {
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#books img {
+    height: 550px;
+    transition: opacity 0.5s ease;
+}
+
+#books .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    color: white;
+}
+
+#books .book:hover img {
+    opacity: 0;
+}
+
+#books .book:hover .description {
+    opacity: 1;
+}
+
+#sliki2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 800px;
+    width: 1900px;
+}
+
+.book {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    background-color: rgba(121, 42, 118, 0.6);
+    color: white;
+}
+
+#tekst3 p:nth-child(1) {
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 120px;
+    color: #7A2A77;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#tekst3 p:nth-child(2) {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 40px;
+    color: #7A2A77;
+    text-align: center;
+}
+
+#books_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#books_container > img {
+    height: 800px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+#tekst4 {
+    height: 500px;
+    width: 2500px;
+    background-color: #f9eef9;
+    border-radius: 20px;
+}
+
+#tekst4 h2 {
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 100px;
+    color: #7A2A77;
+    text-align: center;
+}
+
+#sliki3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sliki3 img {
+    height: 100px;
+    margin-right: 15px;
+}
+
+#sliki3 div {
+    font-family: 'Hind Vadodara', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#sliki3 a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    height: 200px;
+    background-color: #7A2A77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p {
+    color: #e7bce6;
+    font-size: 30px;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.section {
+    position: relative;
+}
+
+.section:hover ~ #header ul li a[href="#aboutme"],
+#aboutme:hover ~ #header ul li a[href="#aboutme"],
+.section:hover ~ #header ul li a[href="#music"],
+#music:hover ~ #header ul li a[href="#music"],
+.section:hover ~ #header ul li a[href="#books"],
+#books:hover ~ #header ul li a[href="#books"],
+.section:hover ~ #header ul li a[href="#contact"],
+#contact:hover ~ #header ul li a[href="#contact"] {
+    background-color: #7A2A77;
+    color: white;
+    border-radius: 5px;
+}
+
+#tekst_music h2{
+    font-family: 'Gwendolyn', sans-serif;
+    font-size: 130px;
+    color: #7A2A77;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#tekst_music p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 50px;
+    color: #7A2A77;
+    text-align: center;
+}
+
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    width: 555px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.play-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playButton img, .stopButton img {
+    height: 50px;
+}
+
+.stopButton {
+    display: none;
+}
+
+.play-button:hover {
+    background-color: #7A2A77;
+}
+#albumi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#albumi>img{
+    height: 400px;
+}
+.cards{
+    display: flex;
+    width: 1200px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.music_tekst{
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 40px;
+    color: #7A2A77;
+    text-align: center;
+    margin-left: 20px;
+
+}
+.cars_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playText{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 30px;
+    color: #7A2A77;
+    display: none;
+    text-align: center;
+}
